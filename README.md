@@ -4,7 +4,7 @@
 The purpose of this project is to build the UI of Netflix. The technologies used are React, Redux Toolkit, Typescript, RxJs, LocalStorage, SASS, Axios, Interceptors, Vite, React Router.
 Here we can see a demo of how it works.
 
-![Docker Services](/demo.mp4?raw=true "Docker Services")
+![Docker Services](demo.mp4?raw=true "Docker Services")
 
 
 ## Local execution with Docker

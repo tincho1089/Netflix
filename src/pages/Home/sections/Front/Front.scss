@@ -1,0 +1,158 @@
+.front {
+  width: 100vw;
+  height: 100vh;
+  color: whitesmoke;
+}
+
+.front-main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.front-title {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  transition: all 1.2s ease-in-out 5s;
+}
+
+.front-title-img {
+  width: 450px;
+  transition: all 1.2s ease-in-out 5s;
+}
+
+.front-title.active {
+  top: 50%;
+  left: 5%;
+
+  .front-title-img {
+    width: 350px;
+  }
+}
+
+.front-description {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  font-size: 14px;
+  transition: all 1.2s ease-in-out 5s;
+
+  p {
+    margin: 0;
+  }
+}
+
+.front-description.active {
+  transform: translateY(100%);
+  opacity: 0;
+}
+
+.front-button-play {
+  color: #000;
+  background: #fff;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  border: none;
+  position: absolute;
+  z-index: 1;
+  top: 70%;
+  left: 5%;
+  cursor: pointer;
+  img {
+    width: 20px;
+    height: 25px;
+    margin-right: 5px;
+    transform: rotate(-90deg);
+  }
+}
+
+label {
+  font-family: 'NetflixRegular', sans-serif;
+}
+
+.front-button-play:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.front-button-info {
+  background: rgba(180, 180, 180, 0.5);
+  color: #fff;
+  height: 40px;
+  border-radius: 5px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  border: none;
+  position: absolute;
+  z-index: 1;
+  top: 70%;
+  left: 14%;
+  cursor: pointer;
+
+  img {
+    width: 30px;
+    margin-right: 5px;
+  }
+}
+
+.front-button-info:hover {
+  background: rgba(180, 180, 180, 0.3);
+}
+
+.front video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.front-poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.front-button {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  background: transparent;
+  position: absolute;
+  right: 120px;
+  top: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 20px;
+  }
+}
+
+.front-button:hover {
+  cursor: pointer;
+}
+
+.front-clasif {
+  height: 35px;
+  width: 80px;
+  padding: 0 10px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  top: 75%;
+  border-left: 3px solid #fff;
+}
+
+.white {
+  filter: brightness(0) saturate(100%) invert(98%) sepia(0%) saturate(0%) hue-rotate(338deg) brightness(101%) contrast(104%);
+}

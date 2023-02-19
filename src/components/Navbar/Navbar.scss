@@ -1,0 +1,149 @@
+.navbar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  justify-content: space-between;
+  background: transparent;
+  z-index: 2;
+  transition: all 0.6s ease-in-out;
+  color: white;
+}
+
+.nav-color {
+  background: #141414;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+
+.nav-logo-img {
+  width: 115px;
+  cursor: pointer;
+  margin-left: 3rem;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list-item {
+  list-style: none;
+  cursor: pointer;
+  margin-left: 18px;
+  color: #e5e5e3;
+  transition: all 0.3s ease-in-out;
+  font-size: 15px;
+}
+
+.nav-list-item:hover {
+  color: #e5e5e380;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 70px;
+}
+
+.nav-icon-search,
+.nav-icon-notif,
+.nav-icon-arrow {
+  filter: brightness(0) saturate(100%) invert(98%) sepia(0%) saturate(0%) hue-rotate(338deg) brightness(101%) contrast(104%);
+  cursor: pointer;
+}
+
+.nav-icon-search {
+  width: 20px;
+}
+
+.nav-children {
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.nav-icon-notif {
+  width: 20px;
+}
+
+.nav-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  height: 100%;
+}
+
+.nav-profile:hover {
+  .nav-icon-arrow {
+    transform: rotate(180deg);
+  }
+
+  .nav-profile-menu {
+    display: flex;
+  }
+}
+
+.nav-profile-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.nav-icon-arrow {
+  width: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-profile-menu {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.8);
+  top: 100%;
+  right: 4%;
+  position: absolute;
+  display: none;
+  animation: showNavProfile 0.3s forwards ease-in-out;
+  width: 225px;
+}
+
+.nav-profile-menu-users {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px;
+}
+
+.nav-profile-menu-users-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-profile-icon {
+  width: 25px;
+  height: 25px;
+  margin-left: 3px;
+}
+
+.nav-profile-menu-signout {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  text-align: center;
+}
+
+@keyframes showNavProfile {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

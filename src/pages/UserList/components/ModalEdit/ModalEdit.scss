@@ -1,0 +1,34 @@
+@import '../ModalCreate/ModalCreate.scss';
+
+.edit-modal {
+  @extend .add-modal;
+}
+
+.edit-modal-container {
+  @extend .add-modal-container;
+}
+
+.edit-modal-content {
+  @extend .add-modal-content;
+}
+
+.edit-modal-title {
+  @extend .add-modal-title;
+  margin: 0;
+}
+
+.edit-modal-divider {
+  @extend .add-modal-divider;
+}
+
+.edit-modal-img-container {
+  position: relative;
+}
+
+.edit-modal-icon {
+  width: 25px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  cursor: pointer;
+}

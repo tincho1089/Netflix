@@ -1,0 +1,55 @@
+.users {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    text-decoration: none;
+  }
+}
+
+.users-main {
+  animation: showUserList 0.4s forwards ease-in;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.users-title {
+  color: #ffffff;
+  font-family: 'NetflixRegular';
+  font-size: 22px;
+}
+
+.users-list {
+  display: flex;
+}
+
+.users-admin {
+  margin-top: 40px;
+  border-radius: 0;
+  padding: 10px 25px;
+  background: transparent;
+  border: 1px solid #808080;
+  color: #808080;
+  cursor: pointer;
+}
+
+.users-admin:hover {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+@keyframes showUserList {
+  from {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
